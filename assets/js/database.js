@@ -2850,11 +2850,10 @@ const items = [
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/8020.png"
   }
 ]
-
 const itemContainer = document.querySelector('.item-container');
 
 function loadItems() {
-  const itemContainer = document.querySelector('.item-container');
+  itemContainer.innerHTML = '';
 
   items.forEach(item => {
     const itemElement = document.createElement('div');
@@ -2886,7 +2885,6 @@ function loadItems() {
 }
 
 loadItems();
-
 //ACA AL FINAL ESTA ESTO
 /* const items = [
     //Assassin Items
