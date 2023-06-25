@@ -2851,6 +2851,42 @@ const items = [
   }
 ]
 
+const itemContainer = document.querySelector('.item-container');
+
+function loadItems() {
+  const itemContainer = document.querySelector('.item-container');
+
+  items.forEach(item => {
+    const itemElement = document.createElement('div');
+    itemElement.classList.add('item');
+
+    const imageElement = document.createElement('img');
+    imageElement.src = item.image;
+    itemElement.appendChild(imageElement);
+
+    const nameElement = document.createElement('h3');
+    nameElement.textContent = item.name;
+    itemElement.appendChild(nameElement);
+
+    const descriptionElement = document.createElement('p');
+    descriptionElement.textContent = item.description;
+    descriptionElement.classList.add('item-description');
+    itemElement.appendChild(descriptionElement);
+
+    itemContainer.appendChild(itemElement);
+
+    itemElement.addEventListener('mouseenter', () => {
+      descriptionElement.style.visibility = 'visible';
+    });
+
+    itemElement.addEventListener('mouseleave', () => {
+      descriptionElement.style.visibility = 'hidden';
+    });
+  });
+}
+
+loadItems();
+
 //ACA AL FINAL ESTA ESTO
 /* const items = [
     //Assassin Items

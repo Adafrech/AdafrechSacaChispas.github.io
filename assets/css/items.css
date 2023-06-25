@@ -34,3 +34,25 @@ header{
 .nav-item{
     margin-inline: 1rem;
 }
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-auto-rows: min-content;
+  }
+  
+  .item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .item-description {
+    visibility: hidden;
+    margin-top: 10px;
+  }
