@@ -16,14 +16,15 @@ header{
 }
 
 .banner{
-    display: flex;
-    align-self: flex-start;
-    height: 100px;
-    width: 100vw;
-    background-image: url(../img/);
-    background-position: 38% 56%;
-    justify-content: center;
-    z-index: 0;
+  display: flex;
+  align-self: flex-start;
+  height: 100px;
+  width: 100vw;
+  background-image: url(../image/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 0;
 }
 .banner h1{
     align-self: center;
@@ -59,4 +60,19 @@ header{
     left: -5px;
     right: -5px;
     bottom: -5px;
+  }
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  *{
+    opacity: 0;
+    animation: fadeSlideIn 1s ease forwards;
   }

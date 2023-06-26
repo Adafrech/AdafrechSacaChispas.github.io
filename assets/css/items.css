@@ -25,8 +25,10 @@ header{
     align-self: flex-start;
     height: 100px;
     width: 100vw;
-    background-image: url(../img/);
-    background-position: 38% 56%;
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: -500% 50%;
     justify-content: center;
     z-index: 0;
 }
@@ -84,7 +86,7 @@ header{
   .price {
     text-decoration: none;
     color: gold;
-    margin-right: 50%; 
+    margin-right: 40%; 
     padding: 10px;
     font-size: small;
   }
@@ -100,4 +102,16 @@ header{
     height: 19px;
     background-image: url(../image/Gold.webp);
     background-size: cover;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .item-container{
+    animation: fadeIn 1s ease;
   }
