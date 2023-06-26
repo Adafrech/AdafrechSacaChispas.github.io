@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Lexend Deca', sans-serif;
+}
 header{
     display: inline-flex;
 }
@@ -54,7 +59,10 @@ header{
     padding: 20px;
     text-align: center;
   }
-  
+  h3{
+    font-size: small;
+    padding-top: 10px;
+  }
   .item img {
     max-width: 100%;
     height: auto;
@@ -63,4 +71,33 @@ header{
   .item-description {
     visibility: hidden;
     margin-top: 10px;
+    color:blue;
+    font-size: small;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .price {
+    text-decoration: none;
+    color: gold;
+    margin-right: 50%; 
+    padding: 10px;
+    font-size: small;
+  }
+  
+  .price:hover {
+    color: goldenrod;
+    font-size: 1.2rem;
+  }
+  
+  .gold-icon {
+    display: inline-block;
+    width: 25px;
+    height: 19px;
+    background-image: url(../image/Gold.webp);
+    background-size: cover;
   }

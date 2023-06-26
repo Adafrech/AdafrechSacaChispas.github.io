@@ -44,7 +44,10 @@
     </nav>
 
     <main>
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="form-check form-check-inline ps-0">
+      
         <div class="form-check form-check-inline ps-0">
           <input type="checkbox" name="filtro" value="Assassin" class="btn-check" id="btn-check-outlined-1" autocomplete="off">
           <label class="btn btn-outline-primary" for="btn-check-outlined-1">Asesinos</label>
@@ -79,9 +82,17 @@
           <input type="checkbox" name="filtro" value="Marksman" class="btn-check" id="btn-check-outlined-7" autocomplete="off">
           <label class="btn btn-outline-primary" for="btn-check-outlined-7">Tiradores</label>
         </div>
+   
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" id="input-buscar" placeholder="Buscar items...">
+        </div>
+      </div>
+
+
       </div>
       <div class="item-container">
       </div>
+     
     </main>
 
     <script src="assets/js/bootstrap.js"></script>
