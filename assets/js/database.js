@@ -1965,11 +1965,11 @@ function loadItems(items) {
     itemContainer.appendChild(itemElement);
 
     itemElement.addEventListener('mouseenter', () => {
-      descriptionElement.style.display = 'block';
+      descriptionElement.style.visibility = 'visible';
     });
 
     itemElement.addEventListener('mouseleave', () => {
-      descriptionElement.style.display = 'none';
+      descriptionElement.style.visibility = 'hidden';
     });
   });
 }
