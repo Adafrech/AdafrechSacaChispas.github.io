@@ -30,7 +30,7 @@ const items = [
     "id": 4,
     "name": "Cinturón de Gigante",
     "description": "   350  de Vida   ",
-  "classes": ["Tanque", "Mago", "Luchador"],
+    "class": "Tanque",
     "totalGold": 900,
     "sellGold": 630,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1011.png"
@@ -48,7 +48,7 @@ const items = [
     "id": 6,
     "name": "Varita Explosiva",
     "description": "   40  de Poder de Habilidad   ",
-    "tag1": "SpellDamage",
+    "class": "Mago",
     "totalGold": 850,
     "sellGold": 595,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1026.png"
@@ -57,7 +57,7 @@ const items = [
     "id": 7,
     "name": "Cristal de Zafiro",
     "description": "   250  de Maná   ",
-    "tag1": "Mana",
+    "class": "Mago",
     "totalGold": 350,
     "sellGold": 245,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1027.png"
@@ -66,7 +66,7 @@ const items = [
     "id": 8,
     "name": "Cristal de Rubí",
     "description": "   150  de Vida   ",
-    "tag1": "Health",
+    "class": "Tanque",
     "totalGold": 400,
     "sellGold": 280,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1028.png"
@@ -75,7 +75,7 @@ const items = [
     "id": 9,
     "name": "Armadura de Tela",
     "description": "   15  de Armadura   ",
-    "tag1": "Armor",
+    "class": "Tanque",
     "totalGold": 300,
     "sellGold": 210,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1029.png"
@@ -84,10 +84,7 @@ const items = [
     "id": 10,
     "name": "Cota de Malla",
     "description": "   40  de Armadura   ",
-    "class": "Asesino",
     "class": "Tanque",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 800,
     "sellGold": 560,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1031.png"
@@ -96,7 +93,7 @@ const items = [
     "id": 11,
     "name": "Manto Anulamagia",
     "description": "   25  de Resistencia Mágica   ",
-    "tag1": "SpellBlock",
+    "class": "Tanque",
     "totalGold": 450,
     "sellGold": 315,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1033.png"
@@ -116,8 +113,7 @@ const items = [
     "id": 13,
     "name": "Espada Larga",
     "description": "   10  de Daño de Ataque   ",
-    "tag1": "Damage",
-    "tag2": "Lane",
+    "class": "Asesino",
     "totalGold": 350,
     "sellGold": 245,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1036.png"
@@ -126,7 +122,7 @@ const items = [
     "id": 14,
     "name": "Picacha",
     "description": "   25  de Daño de Ataque   ",
-    "tag1": "Damage",
+    "class": "Tanque",
     "totalGold": 875,
     "sellGold": 613,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1037.png"
@@ -135,7 +131,7 @@ const items = [
     "id": 15,
     "name": "Espadón",
     "description": "   40  de Daño de Ataque   ",
-    "tag1": "Damage",
+    "class": "Tirador",
     "totalGold": 1300,
     "sellGold": 910,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1038.png"
@@ -166,7 +162,7 @@ const items = [
     "id": 18,
     "name": "Daga",
     "description": "   12%  de Velocidad de Ataque   ",
-    "tag1": "AttackSpeed",
+    "class": "Tirador",
     "totalGold": 300,
     "sellGold": 210,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1042.png"
@@ -176,7 +172,6 @@ const items = [
     "name": "Arco Recurvado",
     "description": "   15%  de Velocidad de Ataque    Punta de Acero:  Los ataques aplican daño mágico al impacto.  ",
     "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 700,
     "sellGold": 490,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1043.png"
@@ -185,7 +180,7 @@ const items = [
     "id": 20,
     "name": "Libro Amplificador",
     "description": "   20  de Poder de Habilidad   ",
-    "tag1": "SpellDamage",
+    "class": "Mago",
     "totalGold": 435,
     "sellGold": 305,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1052.png"
@@ -195,9 +190,6 @@ const items = [
     "name": "Cetro Vampírico",
     "description": "   15  de Daño de Ataque  7%  de Robo de Vida   ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
-    "class": "Luchador",
     "totalGold": 900,
     "sellGold": 630,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1053.png"
@@ -206,9 +198,7 @@ const items = [
     "id": 22,
     "name": "Escudo de Doran",
     "description": "   80  de Vida    Enfoque:  Los ataques infligen daño adicional a súbditos.  Restauración:  Restaura Vida con el tiempo.  Resistir:  Restaura vida luego de recibir daño de un campeón, un monstruo grande de la jungla o un monstruo épico de la jungla. La restauración aumenta cuando tienes poca vida.    Resistencia  66% efectiva cuando lo compran campeones a distancia o al recibir daño de efectos de área o fuentes de daño periódico.   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "Lane",
+    "class": "Tanque",
     "totalGold": 450,
     "sellGold": 180,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1054.png"
@@ -217,10 +207,7 @@ const items = [
     "id": 23,
     "name": "Espada de Doran",
     "description": "   8  de Daño de Ataque  80  de Vida    Belicista:  Obtiene Omnivampirismo.   El Omnivampirismo solo tiene un 33% de efectividad al infligir daño de área de efecto o a través de mascotas.   ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "SpellVamp",
-    "tag4": "Lane",
+    "class": "Tirador",
     "totalGold": 450,
     "sellGold": 180,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1055.png"
@@ -229,10 +216,7 @@ const items = [
     "id": 24,
     "name": "Sortija de Doran",
     "description": "   15  de Poder de Habilidad  70  de Vida    Enfoque:  Los ataques infligen daño adicional a súbditos.   Drenar:  Restaura Maná cada segundo. Infligir daño a un campeón enemigo aumenta esta cantidad. Si no puedes obtener Maná, regenera Vida.   ",
-    "tag1": "Health",
-    "tag2": "Lane",
-    "tag3": "ManaRegen",
-    "tag4": "SpellDamage",
+    "class": "Mago",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1056.png"
@@ -242,8 +226,6 @@ const items = [
     "name": "Capa de Negatrones",
     "description": "   50  de Resistencia Mágica   ",
     "class": "Soporte",
-    "class": "Tanque",
-    "class": "Luchador",
     "totalGold": 900,
     "sellGold": 630,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1057.png"
@@ -252,7 +234,7 @@ const items = [
     "id": 26,
     "name": "Vara Innecesariamente Grande",
     "description": "   60  de Poder de Habilidad   ",
-    "tag1": "SpellDamage",
+    "class": "Mago",
     "totalGold": 1250,
     "sellGold": 875,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1058.png"
@@ -261,9 +243,7 @@ const items = [
     "id": 27,
     "name": "El Sello de la Oscuridad",
     "description": "   15  de Poder de Habilidad  40  de Vida    Gloria:  Obtiene 2 acumulaciones por asesinato de campeón o 1 acumulación por una asistencia (hasta un total de 10 acumulaciones) Pierdes 5 acumulaciones al morir.  Pavor:  Otorga  4 de Poder de Habilidad  por cada acumulación de  Gloria .   Las acumulaciones obtenidas de  Gloria  se mantienen entre este objeto y  Robaalmas de Mejai .   ",
-    "tag1": "Health",
-    "tag2": "SpellDamage",
-    "tag3": "Lane",
+    "class": "Mago",
     "totalGold": 350,
     "sellGold": 140,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/1082.png"
@@ -374,9 +354,7 @@ const items = [
     "id": 60,
     "name": "Cuerno del Guardián",
     "description": "   150  de Vida    Restauración:  Restaura vida por segundo.  Osadía:  Bloquea daño de los ataques y hechizos de campeones.  Legendario:  Este objeto cuenta como un objeto  Legendario .  ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "Lane",
+    "class": "Tanque",
     "totalGold": 950,
     "sellGold": 665,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/2051.png"
@@ -441,7 +419,7 @@ const items = [
     "id": 69,
     "name": "Cronómetro",
     "description": "    Activa:   Estasis:  Úsalo una vez para volverte  invulnerable  e  inalcanzable  durante 2.5 seg, pero impide que realices otras acciones durante este periodo (se transforma en  Cronómetro Roto ).  ",
-    "tag1": "Active",
+    "class": "Mago",
     "totalGold": 750,
     "sellGold": 300,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/2420.png"
@@ -473,19 +451,10 @@ const items = [
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/2423.png"
   },
   {
-    "id": 73,
-    "name": "Cronómetro Roto",
-    "description": "      Tiempo Fragmentado:  El Cronómetro está roto, pero se puede mejorar.   Después de romper un Cronómetro, el vendedor solo te venderá  Cronómetros Rotos.    ",
-    "totalGold": 750,
-    "sellGold": 300,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/2424.png"
-  },
-  {
     "id": 74,
     "name": "Manto del Ocaso",
     "description": "   200  de Vida  30  de Armadura  30  de Resistencia Mágica  20  de Aceleración de Habilidad    Chispa:  Luego de  inmovilizar  campeones o de quedar  inmovilizado , hace que el objetivo y todos los enemigos cercanos reciban daño aumentado.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios    Armadura y Resistencia Mágica   ",
     "class": "Soporte",
-    "class": "Tanque",
     "totalGold": 2300,
     "sellGold": 1610,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3001.png"
@@ -504,8 +473,6 @@ const items = [
     "name": "Manamune",
     "description": "   35  de Daño de Ataque  500  de Maná  15  de Aceleración de Habilidad    Asombro:  Obtienes  daño de ataque adicional igual tu maná máximo .   Carga de Maná:  Impacta a un objetivo con una habilidad o ataque para consumir una carga y obtener  3 de Maná adicional , que se duplica si el objetivo es un campeón. Otorga un máximo de 360 de Maná. Al llegar al máximo, este objeto se transforma en  Muramaná .   Obtienes una  Carga de Maná  nueva cada 8 seg (máx. 4).   ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 2900,
     "sellGold": 2030,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3004.png"
@@ -514,8 +481,7 @@ const items = [
     "id": 77,
     "name": "Grebas del Berserker",
     "description": "   35%  de Velocidad de Ataque  45  de Velocidad de Movimiento   ",
-    "tag1": "AttackSpeed",
-    "tag2": "Boots",
+    "class": "Tirador",
     "totalGold": 1100,
     "sellGold": 770,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3006.png"
@@ -524,7 +490,7 @@ const items = [
     "id": 78,
     "name": "Botas de Rapidez",
     "description": "   60  de Velocidad de Movimiento   La potencia de los efectos de ralentización se reduce un 25%.  ",
-    "tag1": "Boots",
+    "class": "Tirador",
     "totalGold": 900,
     "sellGold": 630,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3009.png"
@@ -551,8 +517,7 @@ const items = [
     "id": 81,
     "name": "Botas del Hechicero",
     "description": "   18  de Penetración de Magia  45  de Velocidad de Movimiento   ",
-    "tag1": "Boots",
-    "tag2": "MagicPenetration",
+    "class": "Mago",
     "totalGold": 1100,
     "sellGold": 770,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3020.png"
@@ -570,7 +535,6 @@ const items = [
     "id": 83,
     "name": "Escudo Glacial",
     "description": "   20  de Armadura  250  de Maná  10  de Aceleración de Habilidad   ",
-    "class": "Soporte",
     "class": "Tanque",
     "totalGold": 900,
     "sellGold": 630,
@@ -580,9 +544,7 @@ const items = [
     "id": 84,
     "name": "Ángel Guardián",
     "description": "   45  de Daño de Ataque  40  de Armadura    Gracia Salvadora:  Tras recibir daño letal, restaura un  50% de Vida básica  y un  30% de Maná Máximo  después de 4 seg de estasis (300 seg de Enfriamiento).  ",
-    "class": "Asesino",
     "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 3000,
     "sellGold": 1200,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3026.png"
@@ -610,8 +572,6 @@ const items = [
     "name": "Último Suspiro",
     "description": "   20  de Daño de Ataque  18%  de Penetración de Armadura   ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 1450,
     "sellGold": 1015,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3035.png"
@@ -629,10 +589,7 @@ const items = [
     "id": 89,
     "name": "Abrazo del Serafín",
     "description": "   70  de Poder de Habilidad  860  de Maná  200  de Vida  10  de Aceleración de Habilidad    Asombro:  Obtienes poder de habilidad con base en tu Maná.  Salvavidas:  Tras recibir daño que reduciría tu Vida por debajo del 30%, obtienes un escudo basado en tu Maná actual.  ",
-    "tag1": "Health",
-    "tag2": "SpellDamage",
-    "tag3": "Mana",
-    "tag4": "AbilityHaste",
+    "class": "Mago",
     "totalGold": 3000,
     "sellGold": 2100,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3040.png"
@@ -959,7 +916,6 @@ const items = [
     "name": "Égida de la Legión",
     "description": "   30  de Armadura  30  de Resistencia Mágica  10  de Aceleración de Habilidad   ",
     "class": "Soporte",
-    "class": "Tanque",
     "totalGold": 1200,
     "sellGold": 840,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3105.png"
@@ -987,7 +943,6 @@ const items = [
     "name": "Promesa del Caballero",
     "description": "   350  de Vida  25  de Armadura  15  de Aceleración de Habilidad  125%  de Regen. de Vida Básica    Activa:   Juramento:  Designa a un aliado  digno .   Sacrificio:  Mientras tu aliado  digno  esté cerca, redirige el daño que tu aliado recibe hacia ti y cura según el daño que inflige tu aliado  digno  a los campeones.  ",
     "class": "Soporte",
-    "class": "Tanque",
     "totalGold": 2200,
     "sellGold": 1540,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3109.png"
@@ -1096,8 +1051,6 @@ const items = [
     "name": "El Llamado del Verdugo",
     "description": "   15  de Daño de Ataque    Desgarrar:  Infligir daño físico aplica un  40% de Heridas Graves  a los campeones durante 3 seg.     Heridas Graves  reduce la efectividad de los efectos de curación y regeneración.   ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 800,
     "sellGold": 560,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3123.png"
@@ -1107,7 +1060,6 @@ const items = [
     "name": "Espadafuria de Guinsoo",
     "description": "   30  de Daño de Ataque  30  de Poder de Habilidad  25%  de Velocidad de Ataque    Ira:  Los ataques infligen daño adicional  al impacto . Tu Probabilidad de Golpe Crítico se convierte en más.  Ataque Furioso:  Los ataques básicos otorgan  velocidad de ataque  adicional, que se acumula hasta un límite. Al máximo de acumulaciones, cada tercer ataque aplica tus  al impacto  efectos dos veces.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  Un  5%  de Penetración de Armadura y un  6%  de Penetración de Magia.  ",
     "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 3200,
     "sellGold": 2240,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3124.png"
@@ -1116,8 +1068,6 @@ const items = [
     "id": 139,
     "name": "Martillo de Guerra de Caulfield",
     "description": "   25  de Daño de Ataque  10  de Aceleración de Habilidad   ",
-    "class": "Asesino",
-    "class": "Tirador",
     "class": "Luchador",
     "totalGold": 1100,
     "sellGold": 770,
@@ -1154,9 +1104,7 @@ const items = [
     "id": 143,
     "name": "Fajín de Mercurio",
     "description": "   30  de Resistencia Mágica    Activa:   Capa Mercurial:  Elimina todas las debilitaciones de control de masas (excluyendo  levantamientos ).   ",
-    "class": "Asesino",
     "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 1300,
     "sellGold": 910,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3140.png"
@@ -1201,7 +1149,6 @@ const items = [
     "id": 148,
     "name": "Espada del Rey Arruinado",
     "description": "   40  de Daño de Ataque  25%  de Velocidad de Ataque  8%  de Robo de Vida    Filo Neblina:  Los ataques aplican daño físico según la vida actual del objetivo.   Sifón:  Atacar a un campeón 3 veces inflige daño mágico y roba velocidad de movimiento.  El rendimiento del objeto difiere para los usuarios cuerpo a cuerpo y a distancia.  ",
-    "class": "Tirador",
     "class": "Luchador",
     "totalGold": 3300,
     "sellGold": 2310,
@@ -1212,8 +1159,6 @@ const items = [
     "name": "Sorbechizos",
     "description": "   25  de Daño de Ataque  35  de Resistencia Mágica    Salvavidas:  Tras recibir daño mágico que reduciría la vida por debajo del 30%, obtienes un escudo contra daño mágico.  ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 1300,
     "sellGold": 910,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3155.png"
@@ -1223,8 +1168,6 @@ const items = [
     "name": "Fauces de Malmortius",
     "description": "   65  de Daño de Ataque  50  de Resistencia Mágica    Salvavidas:  Tras recibir daño mágico que reduciría la vida por debajo del 30%, obtienes un escudo contra daño mágico. Cuando  Salvavidas  se activa, obtienes Omnivampirismo hasta el final del combate.    ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 2800,
     "sellGold": 1960,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3156.png"
@@ -1252,7 +1195,6 @@ const items = [
     "id": 153,
     "name": "Lanza de Shojin",
     "description": "   65  de Daño de Ataque  300  de Vida  20  de Aceleración de Habilidad    Fuerza de Dragón:  Los hechizos que no sean definitivas obtienen (8 (+0.08 por cada 100 de Daño de Ataque adicional) | 6 (+0.06 por cada 100 de Daño de Ataque adicional)) de Aceleración de Habilidad, reducido a (4 (+0.04 por cada 100 de Daño de Ataque adicional) | 3 (+0.03 por cada 100 de Daño de Ataque adicional))) de Aceleración de Habilidad para los hechizos inmovilizantes.  Exigencia:  Obtiene hasta (0.15 | 0.1) de Velocidad de Movimiento aumentada según la vida faltante (llega al máximo si la vida está por debajo del 33%).  El rendimiento del objeto difiere para los usuarios cuerpo a cuerpo y a distancia.  ",
-    "class": "Asesino",
     "class": "Luchador",
     "totalGold": 3400,
     "sellGold": 2380,
@@ -1378,7 +1320,6 @@ const items = [
     "name": "Placa del Hombre Muerto",
     "description": "   300  de Vida  45  de Armadura  5%  de Velocidad de Movimiento   Hundebarcos:  Mientras te mueves, acumulas velocidad de movimiento. Tu próximo ataque libera la velocidad de movimiento acumulada para infligir daño. Si un campeón cuerpo a cuerpo lo lanza a la máxima velocidad, el ataque también  ralentiza  al objetivo.   ''Solo hay una forma de que me quites esta armadura...''. —Autor olvidado   ",
     "class": "Tanque",
-    "class": "Luchador",
     "totalGold": 2900,
     "sellGold": 2030,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3742.png"
@@ -1460,10 +1401,7 @@ const items = [
     "id": 182,
     "name": "Fragmento de Hielo Puro",
     "description": "   40  de Poder de Habilidad  75  de Vida  100%  de Regen. de Maná Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 4 centinelas invisibles que se recargan al visitar la tienda.   ",
-    "tag1": "GoldPer",
-    "tag2": "Lane",
-    "tag3": "ManaRegen",
-    "tag4": "SpellDamage",
+    "class": "Mago",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3853.png"
@@ -1472,12 +1410,7 @@ const items = [
     "id": 183,
     "name": "Hombreras de Acero",
     "description": "   3  de Daño de Ataque  30  de Vida  50%  de Regen. de Vida Básica  2  de oro cada 10 seg   Botín de Guerra:  Al estar cerca de un campeón aliado, los ataques ejecutan a los súbditos con menos del (50% para usuarios cuerpo a cuerpo | 30% para usuarios a distancia) de su Vida Máxima. Matar a un súbdito otorga el mismo oro de asesinato al campeón aliado más cercano. Estos efectos se recargan cada 35 seg (máx. 3 cargas).  Misión:  Obtienes 500 de oro de este objeto al transformarlo en  Hombreras de Acero Rúnico , lo que otorga  Activa:   Vigilancia .   Este objeto otorga oro reducido de súbditos si matas a una cantidad excesiva de ellos.   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "Damage",
-    "tag4": "Vision",
-    "tag5": "GoldPer",
-    "tag6": "Lane",
+    "class": "Soporte",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3854.png"
@@ -1486,10 +1419,7 @@ const items = [
     "id": 184,
     "name": "Hombreras de Acero Rúnico",
     "description": "   6  de Daño de Ataque  100  de Vida  75%  de Regen. de Vida Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 3 centinelas invisibles que se recargan al visitar la tienda.    Botín de Guerra:  Al estar cerca de un campeón aliado, los ataques ejecutan a los súbditos con menos del 50% de su Vida Máxima. Matar a un súbdito otorga el mismo oro de asesinato al campeón aliado más cercano. Estos efectos se recargan cada 35 seg (máx. 3 cargas).  Misión:  Obtienes 1000 de oro de este objeto al transformarlo en  Baluarte de la Montaña .   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
+    "class": "Soporte",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3855.png"
@@ -1498,10 +1428,7 @@ const items = [
     "id": 185,
     "name": "Hombreras de Roca Blanca",
     "description": "   15  de Daño de Ataque  250  de Vida  100%  de Regen. de Vida Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 4 centinelas invisibles que se recargan al visitar la tienda.   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
+    "class": "Soporte",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3857.png"
@@ -1510,12 +1437,7 @@ const items = [
     "id": 186,
     "name": "Escudo Reliquia",
     "description": "   5  de Poder de Habilidad  30  de Vida  50%  de Regen. de Vida Básica  2  de oro cada 10 seg   Botín de Guerra:  Al estar cerca de un campeón aliado, los ataques ejecutan a los súbditos con menos del (50% para usuarios cuerpo a cuerpo | 30% para usuarios a distancia) de su Vida Máxima. Matar a un súbdito otorga el mismo oro de asesinato al campeón aliado más cercano. Estos efectos se recargan cada 35 seg (máx. 3 cargas).  Misión:  Obtienes 500 de oro de este objeto al transformarlo en  Escudo de Targón , lo que otorga  Activa:   Vigilancia .   Este objeto otorga oro reducido de súbditos si matas a una cantidad excesiva de ellos.   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "SpellDamage",
-    "tag4": "Vision",
-    "tag5": "GoldPer",
-    "tag6": "Lane",
+    "class": "Soporte",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3858.png"
@@ -1524,69 +1446,15 @@ const items = [
     "id": 187,
     "name": "Escudo de Targón",
     "description": "   10  de Poder de Habilidad  100  de Vida  75%  de Regen. de Vida Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 3 centinelas invisibles que se recargan al visitar la tienda.    Botín de Guerra:  Al estar cerca de un campeón aliado, los ataques ejecutan a los súbditos con menos del 50% de su Vida Máxima. Matar a un súbdito otorga el mismo oro de asesinato al campeón aliado más cercano. Estos efectos se recargan cada 35 seg (máx. 3 cargas).  Misión:  Obtienes 1000 de oro de este objeto al transformarlo en  Baluarte de la Montaña .   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
+    "class": "Soporte",
     "totalGold": 400,
     "sellGold": 160,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3859.png"
   },
   {
-    "id": 188,
-    "name": "Baluarte de la Montaña",
-    "description": "   20  de Poder de Habilidad  250  de Vida  100%  de Regen. de Vida Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 4 centinelas invisibles que se recargan al visitar la tienda.   ",
-    "tag1": "Health",
-    "tag2": "HealthRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
-    "totalGold": 400,
-    "sellGold": 160,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3860.png"
-  },
-  {
-    "id": 189,
-    "name": "Hoz Espectral",
-    "description": "   5  de Daño de Ataque  10  de Vida  25%  de Regen. de Maná Básica  2  de oro cada 10 seg    Tributo:  Las habilidades que infligen daño y los ataques contra campeones o estructuras otorgan 20 de oro al estar cerca de un campeón aliado. Esto puede ocurrir hasta 3 veces cada 30 seg.  Misión:  Obtienes 500 de oro de este objeto al transformarlo en  Creciente de Sombras , lo que otorga  Activa:   Vigilancia .   Este objeto otorga oro reducido de súbditos si matas a una cantidad excesiva de ellos.   ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "ManaRegen",
-    "tag4": "Vision",
-    "tag5": "GoldPer",
-    "tag6": "Lane",
-    "totalGold": 400,
-    "sellGold": 160,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3862.png"
-  },
-  {
-    "id": 190,
-    "name": "Creciente de Sombras",
-    "description": "   10  de Daño de Ataque  60  de Vida  50%  de Regen. de Maná Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Tributo:  Mientras estés cerca de un campeón aliado, las habilidades y los ataques dañinos contra campeones o estructuras otorgan 20 de oro. Se puede activar hasta 3 veces cada 36 seg.  Misión:  Obtienes 1000 de oro de este objeto al transformarlo en  Guadaña de Niebla Oscura .   Este objeto otorga oro reducido de súbditos si matas a una cantidad excesiva de ellos.   ",
-    "tag1": "Health",
-    "tag2": "ManaRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
-    "totalGold": 400,
-    "sellGold": 160,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3863.png"
-  },
-  {
-    "id": 191,
-    "name": "Guadaña de Niebla Oscura",
-    "description": "   20  de Daño de Ataque  75  de Vida  100%  de Regen. de Maná Básica  3  de oro cada 10 seg    Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a ti y a tu equipo. Almacena hasta 0 centinelas invisibles que se recargan al visitar la tienda.   Activa:   Centinela:  Coloca en el piso un centinela  invisible  para los enemigos, pero que otorga visión del área circundante a tu equipo. Almacena hasta 4 centinelas invisibles que se recargan al visitar la tienda.   ",
-    "tag1": "Health",
-    "tag2": "ManaRegen",
-    "tag3": "GoldPer",
-    "tag4": "Lane",
-    "totalGold": 400,
-    "sellGold": 160,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/3864.png"
-  },
-  {
     "id": 195,
     "name": "Orbe del Olvido",
     "description": "   30  de Poder de Habilidad    Maldición:  Infligir daño mágico aplica un  40% de Heridas Graves  a campeones durante 3 seg.    Heridas Graves  reduce la efectividad de los efectos de curación y regeneración.   ",
-    "class": "Soporte",
     "class": "Mago",
     "totalGold": 800,
     "sellGold": 560,
@@ -1605,7 +1473,6 @@ const items = [
     "id": 197,
     "name": "Fuerza de la Naturaleza",
     "description": "   400  de Vida  60  de Resistencia Mágica  5%  de Velocidad de Movimiento    Absorber:  Al recibir  daño mágico  de campeones enemigos, obtienes una acumulación de  Firmeza . Los efectos de  inmovilización  contra enemigos otorgan acumulaciones adicionales.  Disipar:  Al alcanzar el máximo de acumulaciones de  Firmeza , obtienes un aumento de resistencia mágica y velocidad de movimiento.  ",
-    "class": "Soporte",
     "class": "Tanque",
     "totalGold": 2800,
     "sellGold": 1960,
@@ -1615,19 +1482,6 @@ const items = [
     "id": 198,
     "name": "La Espátula Dorada",
     "description": "   70  de Daño de Ataque  120  de Poder de Habilidad  50%  de Velocidad de Ataque  30%  de Probabilidad de Golpe Crítico  250  de Vida  30  de Armadura  30  de Resistencia Mágica  250  de Maná  20  de Aceleración de Habilidad  10%  de Velocidad de Movimiento  10%  de Robo de Vida  100%  de Regen. de Vida Básica  100%  de Regen. de Maná Básica    Haciendo Algo:  ¡Estás permanentemente en llamas!  ",
-    "tag1": "Health",
-    "tag2": "SpellBlock",
-    "tag3": "HealthRegen",
-    "tag4": "Armor",
-    "tag5": "Damage",
-    "tag6": "CriticalStrike",
-    "tag7": "AttackSpeed",
-    "tag8": "LifeSteal",
-    "tag9": "SpellDamage",
-    "tag10": "Mana",
-    "tag11": "ManaRegen",
-    "tag12": "CooldownReduction",
-    "tag13": "NonbootsMovement",
     "totalGold": 7237,
     "sellGold": 5066,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/4403.png"
@@ -1699,7 +1553,6 @@ const items = [
     "id": 206,
     "name": "Abrazo Demoniaco",
     "description": "   75  de Poder de Habilidad  350  de Vida    Mirada de Azakana:  Infligir daño con habilidades quema a los enemigos por su Vida Máxima como daño mágico cada segundo.  Pacto Oscuro:  Obtienes  vida adicional  como  poder de habilidad .   ",
-    "class": "Tanque",
     "class": "Mago",
     "totalGold": 3000,
     "sellGold": 2100,
@@ -1709,15 +1562,7 @@ const items = [
     "id": 207,
     "name": "Piedravigía Observadora",
     "description": "   150  de Vida  10  de Aceleración de Habilidad  50%  de Regen. de Maná Básica    Cofre Arcano:  Este objeto puede almacenar hasta 3 centinelas de control comprados.  Bendición de Ixtal:  Aumenta un 8% la Vida adicional, el Daño de Ataque adicional, la Aceleración de Habilidad y el Poder de Habilidad.  ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "SpellDamage",
-    "tag4": "ManaRegen",
-    "tag5": "Vision",
-    "tag6": "Active",
-    "tag7": "CooldownReduction",
-    "tag8": "AbilityHaste",
-    "totalGold": 1100,
+    "class": "Soporte",
     "sellGold": 770,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/4638.png"
   },
@@ -1725,14 +1570,7 @@ const items = [
     "id": 208,
     "name": "Piedravigía Agitadora",
     "description": "   80  de Vida  25%  de Regen. de Maná Básica    Cofre Arcano:  Este objeto puede almacenar hasta 2 centinelas de control comprados.    ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "SpellDamage",
-    "tag4": "ManaRegen",
-    "tag5": "Vision",
-    "tag6": "Active",
-    "tag7": "CooldownReduction",
-    "tag8": "AbilityHaste",
+    "class": "Soporte",
     "totalGold": 350,
     "sellGold": 140,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/4641.png"
@@ -1786,7 +1624,6 @@ const items = [
     "id": 214,
     "name": "Amanecer Plateado",
     "description": "   40  de Daño de Ataque  300  de Vida  40  de Resistencia Mágica    Activa:   Capa Mercurial:  Elimina todas las debilitaciones de control de masas y obtienes Tenacidad y resistencia a ralentizaciones.  ",
-    "class": "Asesino",
     "class": "Luchador",
     "totalGold": 3000,
     "sellGold": 2100,
@@ -1805,7 +1642,6 @@ const items = [
     "id": 216,
     "name": "Sierraespada Quimopunk",
     "description": "   55  de Daño de Ataque  250  de Vida  25  de Aceleración de Habilidad    Corte Mutilador:  Infligir daño físico aplica un 40% de  Heridas Graves  a campeones enemigos por 3 seg.   Corte Mutilador Heridas Graves  reduce la efectividad de los efectos de curación y regeneración.   ",
-    "class": "Asesino",
     "class": "Luchador",
     "totalGold": 2800,
     "sellGold": 1960,
@@ -1942,7 +1778,6 @@ const items = [
     "name": "Virtud Radiante",
     "description": "   350  de Vida  30  de Armadura  30  de Resistencia Mágica  10  de Aceleración de Habilidad    Luz Guía:  Trasciendes al lanzar tu definitiva, lo que aumenta tu vida máxima. Al estar bajo el efecto de Trascendencia, tú y tus aliados se curan con el tiempo.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Vida.  ",
     "class": "Soporte",
-    "class1": "Tanque",
     "totalGold": 2700,
     "sellGold": 1890,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6667.png"
@@ -1997,7 +1832,6 @@ const items = [
     "name": "El Coleccionista",
     "description": "   55  de Daño de Ataque  20%  de Probabilidad de Golpe Crítico  18  de Letalidad    Muerte e Impuestos:  Infligir daño que dejaría a un campeón enemigo por debajo del 5% de Vida lo ejecuta. Los asesinatos de campeones otorgan 25 de oro adicional.  ",
     "class": "Tirador",
-    "class": "Asesino",
     "totalGold": 3000,
     "sellGold": 2100,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6676.png"
@@ -2007,7 +1841,6 @@ const items = [
     "name": "Cuchillo de Furia",
     "description": "   25%  de Velocidad de Ataque    Ira:  Los ataques infligen  20 de daño mágico   al impacto .  Ataque Furioso:  Los ataques básicos otorgan un  5% de Velocidad de Ataque , que se acumula hasta 3 veces.  ",
     "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 1200,
     "sellGold": 840,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6677.png"
@@ -2026,8 +1859,6 @@ const items = [
     "name": "Eclipse",
     "description": "   60  de Daño de Ataque  12  de Letalidad  15  de Aceleración de Habilidad     Luna Eterna:  Impactar a un campeón con 2 ataques o habilidades diferentes en un lapso de 1.5 seg inflige daño adicional, te otorga velocidad de movimiento y un escudo.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Penetración de Armadura y de Velocidad de Movimiento.  ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 3100,
     "sellGold": 2170,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6692.png"
@@ -2046,8 +1877,6 @@ const items = [
     "name": "Rencor de Serylda",
     "description": "   45  de Daño de Ataque  30%  de Penetración de Armadura  20  de Aceleración de Habilidad    Frío Implacable:  Las habilidades de daño  ralentizan  a los enemigos.  ",
     "class": "Asesino",
-    "class": "Tirador",
-    "class": "Luchador",
     "totalGold": 3200,
     "sellGold": 2240,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6694.png"
@@ -2069,114 +1898,6 @@ const items = [
     "totalGold": 3000,
     "sellGold": 2100,
     "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/6696.png"
-  },
-  {
-    "id": 245,
-    "name": "Garra Furia de Arena",
-    "description": "   75  de Daño de Ataque  26  de Letalidad  25  de Aceleración de Habilidad     Ataque de Arena:  Tras desplazarte, saltar o salir de sigilo, tu próximo ataque contra un campeón inflige daño físico adicional. Si lo inflige un campeón cuerpo a cuerpo, este ataque además  ralentizará  al objetivo.  ",
-    "tag1": "Damage",
-    "tag2": "Active",
-    "tag3": "CooldownReduction",
-    "tag4": "ArmorPenetration",
-    "tag5": "AbilityHaste",
-    "totalGold": 3000,
-    "sellGold": 2100,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7000.png"
-  },
-  {
-    "id": 246,
-    "name": "Syzygy",
-    "description": "   80  de Daño de Ataque  20  de Letalidad  20  de Aceleración de Habilidad     Luna Eterna:  Impactar a un campeón con 2 ataques o habilidades diferentes en un lapso de 1.5 seg inflige daño adicional, te otorga velocidad de movimiento y un escudo.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Penetración de Armadura y de Velocidad de Movimiento.  ",
-    "tag1": "Damage",
-    "tag2": "CooldownReduction",
-    "tag3": "NonbootsMovement",
-    "tag4": "ArmorPenetration",
-    "tag5": "AbilityHaste",
-    "totalGold": 3100,
-    "sellGold": 2170,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7001.png"
-  },
-  {
-    "id": 248,
-    "name": "Puño de Hielo",
-    "description": "   550  de Vida  70  de Armadura  25  de Aceleración de Habilidad    Espada Encantada:  Después de usar una habilidad, tu próximo ataque recibe una mejora de daño adicional y crea un campo congelado por 2.5 seg. Los enemigos que se muevan a través del campo quedan  ralentizados . El objetivo principal queda incapacitado, ya que le aplica un 100% de ralentización adicional y reduce su daño en un 10% contra ti por 2.5 seg. (1.5 seg ).   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios   50 de Vida ,  5%  de Tenacidad y  5%  de resistencia a ralentizaciones.   ",
-    "tag1": "Health",
-    "tag2": "Armor",
-    "tag3": "CooldownReduction",
-    "tag4": "Slow",
-    "tag5": "OnHit",
-    "tag6": "AbilityHaste",
-    "totalGold": 3000,
-    "sellGold": 2100,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7005.png"
-  },
-  {
-    "id": 249,
-    "name": "Tifón",
-    "description": "   65  de Daño de Ataque  30%  de Velocidad de Ataque  20%  de Probabilidad de Golpe Crítico  10%  de Velocidad de Movimiento    Activa:   Tromba:  Se desplaza a la dirección objetivo, dispara tres misiles al enemigo con menos vida cerca de tu destino. Inflige daño físico, que aumenta contra objetivos con menos vida.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios   5  de Daño de Ataque.   Daño de misil máximo infligido cuando la vida de un enemigo es menor que al 25%. El desplazamiento de Tromba no puede pasar a través del terreno.   ",
-    "tag1": "Damage",
-    "tag2": "CriticalStrike",
-    "tag3": "AttackSpeed",
-    "tag4": "Active",
-    "tag5": "NonbootsMovement",
-    "totalGold": 3400,
-    "sellGold": 2380,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7006.png"
-  },
-  {
-    "id": 250,
-    "name": "Sacrificio del Matasierpes",
-    "description": "   85  de Daño de Ataque  40%  de Velocidad de Ataque  20%  de Probabilidad de Golpe Crítico    Derríbalo:  Cada tercer ataque inflige daño físico adicional. Las activaciones repetidas en el mismo objetivo aumentan el daño infligido.  ",
-    "tag1": "Damage",
-    "tag2": "CriticalStrike",
-    "tag3": "AttackSpeed",
-    "totalGold": 3000,
-    "sellGold": 2100,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7007.png"
-  },
-  {
-    "id": 253,
-    "name": "Víspera",
-    "description": "   120  de Poder de Habilidad  400  de Vida  30  de Aceleración de Habilidad    Desgarraalmas:  Infligir daño a un campeón inflige daño mágico adicional y te otorga velocidad de movimiento.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Aceleración de Habilidad.  ",
-    "tag1": "Health",
-    "tag2": "SpellDamage",
-    "tag3": "CooldownReduction",
-    "tag4": "NonbootsMovement",
-    "tag5": "AbilityHaste",
-    "totalGold": 3200,
-    "sellGold": 2240,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7010.png"
-  },
-  {
-    "id": 258,
-    "name": "Hambre Incesante",
-    "description": "   70  de Daño de Ataque  450  de Vida  25  de Aceleración de Habilidad  12%  de Omnivampirismo    Activa:   Corte Sediento  Inflige daño a los enemigos cercanos. Restaura vida por cada campeón alcanzado.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Vida y Aceleración de Habilidad.  ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "LifeSteal",
-    "tag4": "Active",
-    "tag5": "CooldownReduction",
-    "tag6": "SpellVamp",
-    "tag7": "AbilityHaste",
-    "totalGold": 3200,
-    "sellGold": 2240,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7015.png"
-  },
-  {
-    "id": 259,
-    "name": "Fragmentasueños",
-    "description": "   70  de Daño de Ataque  30%  de Velocidad de Ataque  400  de Vida  25  de Aceleración de Habilidad    Activa:   Corte Obstructor:  Inflige daño a los enemigos cercanos y los  ralentiza . Se puede lanzar mientras te mueves.   Marcha Heroica:  Infligir daño físico otorga velocidad de movimiento.   Pasiva Mítica:  Otorga a todos los otros objetos  legendarios  de Velocidad de movimiento.  ",
-    "tag1": "Health",
-    "tag2": "Damage",
-    "tag3": "AttackSpeed",
-    "tag4": "Active",
-    "tag5": "CooldownReduction",
-    "tag6": "Slow",
-    "tag7": "NonbootsMovement",
-    "tag8": "AbilityHaste",
-    "totalGold": 3300,
-    "sellGold": 2310,
-    "image": "https://ddragon.leagueoflegends.com/cdn/13.12.1/img/item/7016.png"
   },
   {
     "id": 278,
@@ -2203,10 +1924,10 @@ const inputBuscar = document.getElementById('input-buscar');
 const filtrosCheckbox = document.querySelectorAll('.btn-check');
 
 filtrosCheckbox.forEach(checkbox => {
-  checkbox.addEventListener('change', filtrarItems);
+  checkbox.addEventListener('change', filterItems);
 });
-inputBuscar.addEventListener('input', filtrarItems);
 
+inputBuscar.addEventListener('input', filterItems);
 
 function loadItems(items) {
   itemContainer.innerHTML = '';
@@ -2244,38 +1965,33 @@ function loadItems(items) {
     itemContainer.appendChild(itemElement);
 
     itemElement.addEventListener('mouseenter', () => {
-      descriptionElement.style.visibility = 'visible';
+      descriptionElement.style.display = 'block';
     });
 
     itemElement.addEventListener('mouseleave', () => {
-      descriptionElement.style.visibility = 'hidden';
+      descriptionElement.style.display = 'none';
     });
   });
 }
-function filtrarItems() {
-  const filtro = inputBuscar.value.toLowerCase();
-  const filtrosSeleccionados = [];
 
-  filtrosCheckbox.forEach(checkbox => {
-    if (checkbox.checked) {
-      filtrosSeleccionados.push(checkbox.value.toLowerCase());
-    }
-  });
-  
-  filtrosCheckbox.forEach(checkbox => {
-    if (!filtrosSeleccionados.includes(checkbox.value.toLowerCase())) {
-      checkbox.checked = false;
-    }
-  });
+function filterItems() {
+  const checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
+  const categoriasSeleccionadas = Array.from(checkboxes).map(checkbox => checkbox.value);
+  const searchText = inputBuscar.value.toLowerCase();
 
-  const itemsFiltrados = items.filter(item => {
-    const cumpleFiltroNombre = item.name.toLowerCase().includes(filtro);
-    const cumpleFiltroClases = filtrosSeleccionados.length === 0 || filtrosSeleccionados.every(filtro => item.classes.includes(filtro));
+  let filteredItems = [];
 
-    return cumpleFiltroNombre && cumpleFiltroClases;
-  });
+  if (categoriasSeleccionadas.length === 0) {
+    filteredItems = items.filter(item => item.name.toLowerCase().includes(searchText));
+  } else {
+    filteredItems = items.filter(item => {
+      const hasCategoria = categoriasSeleccionadas.includes(item.class);
+      const hasSearchText = item.name.toLowerCase().includes(searchText);
+      return hasCategoria && hasSearchText;
+    });
+  }
 
-  loadItems(itemsFiltrados);
+  loadItems(filteredItems);
 }
 
 loadItems(items);
