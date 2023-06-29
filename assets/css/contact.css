@@ -32,6 +32,9 @@ header{
 .nav-item{
   margin-inline: 1rem;
 }
+.navbar-nav,.nav-underline{
+  margin-inline: 5rem;
+}
 .navbar-nav .nav-link {
   transition: all 0.8s ease-in-out;
   font-family: 'Lexend Deca', sans-serif;

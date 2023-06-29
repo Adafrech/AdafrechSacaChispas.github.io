@@ -3,8 +3,12 @@ const nombreInput = document.getElementById('nombre');
 const emailInput = document.getElementById('email');
 const mensajeInput = document.getElementById('mensaje');
 
+nombreInput.value = '';
+emailInput.value = '';
+mensajeInput.value = '';
+
 form.addEventListener('submit', function(event) {
-  event.preventDefault();
+  //event.preventDefault();
 
   const datosFormulario = {
     nombre: nombreInput.value,
@@ -16,9 +20,6 @@ form.addEventListener('submit', function(event) {
   localStorage.setItem('formularioContacto', JSON.stringify(datosFormulario));
 
 
-  nombreInput.value = '';
-  emailInput.value = '';
-  mensajeInput.value = '';
 
   alert('Los datos del formulario han sido almacenados correctamente.');
 });
